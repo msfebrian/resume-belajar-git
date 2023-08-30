@@ -15,7 +15,7 @@ setting repository
 3. jika sudah sesuai config user
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
-jika hanya untuk loca folder saja/folder yg diinginkan saja
+jika hanya untuk local folder saja/folder yg diinginkan saja
 $ git config --local user.name "John Doe"
 $ git config --local user.email johndoe@example.com
 
@@ -69,7 +69,6 @@ git log --all --decorate --oneline --graph
 membuat perintah alias
 alias graph="git log --all --decorate --oneline --graph"
 perintah diatas jadi bisa dipanggil dengan graph
-
 
 
 untuk tarik data/clone dari online host
