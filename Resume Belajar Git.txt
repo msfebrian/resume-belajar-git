@@ -2,8 +2,11 @@ alur kerja git
 Work Tree --> Stagged --> History (commit)
 
 melihat configurasi git
-git config --list
-
+	git config --list
+untuk keluar list
+	tekan :q
+unutk keluar dari text editor bawaan git (vim)
+	tekan :wq
 
 perintah untuk membuat repository git di local
 1. masuk ke folder yg akan dijadikan repository
@@ -13,11 +16,11 @@ setting repository
 1. pastikan folder sudah sesuai
 2. cek dgn perintah print work direktory yaitu "pwd" tanpa tanda kutip
 3. jika sudah sesuai config user
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+	$ git config --global user.name "John Doe"
+	$ git config --global user.email johndoe@example.com
 jika hanya untuk local folder saja/folder yg diinginkan saja
-$ git config --local user.name "John Doe"
-$ git config --local user.email johndoe@example.com
+	$ git config --local user.name "John Doe"
+	$ git config --local user.email johndoe@example.com
 
 
 untuk memasukkan file ke stage
@@ -25,80 +28,77 @@ untuk memasukkan file ke stage
 - perintah untuk memasukkan file tertentu--> git add "nama_file"
 
 perintah untuk commit
-git commit -m "uraian perubahannya"
+	git commit -m "uraian perubahannya"
 
 perintah add stage sekaligus commit
-git commit -am "nama_file"
+	git commit -am "nama_file"
 
 cara cek status commit dan status synkron/up to date dan tidaknya di repository remote
-git status
+	git status
 
 cara lihat history
-git log
+	git log
 
 untuk file tertentu
-git log -- nama_file
-
+	git log -- nama_file
 
 untuk melihat branch yg aktif 
-git branch
+	git branch
 
 untuk membuat branch
-git branch nama_branch
+	git branch nama_branch
 
 untuk pindah branch
-git checkout nama_branch
+	git checkout nama_branch
 
 untuk mengembalikan file dari commit
-git log
-git checkout 5_digit_hash contoh git checkout 766b4
+	git log
+	git checkout 5_digit_hash contoh git checkout 766b4
 
 untuk melihat branch yg sudah di merge
-git branch --merged
+	git branch --merged
 
 untuk hapus branch yang sudah di merge
-git branch -d nama_branch
+	git branch -d nama_branch
 
 untuk hapus branch yang belum di merge
-git branch -D nama_branch
+	git branch -D nama_branch
 
 
 melihat graph
-git log --all --decorate --oneline --graph
+	git log --all --decorate --oneline --graph
 
 membuat perintah alias
-alias graph="git log --all --decorate --oneline --graph"
+	alias graph="git log --all --decorate --oneline --graph"
 perintah diatas jadi bisa dipanggil dengan graph
 
 
 untuk tarik data/clone dari online host
-git clone url_gitnya
-
+	git clone url_gitnya
 
 cara merge branch ke master
 posisi folder di master kemudian perintah git merge nama_branch
 jika ada conflict perbaiki dahulu manual
 
-
 tahapan remote
 	untuk melihat remote
-	git remote
+		git remote
 
 	untuk melihat detail alamat remote
-	git remote -v 
+		git remote -v 
 
 	untuk meng add reposiroty dari local ke online host
-	git remote add origin https://linkrepository_gitnya.git (nama origin bisa diganti2 dgn nama remotenya misal github/gitlab)
+		git remote add origin https://linkrepository_gitnya.git (nama origin bisa diganti2 dgn nama remotenya misal github/gitlab)
 
 	untuk upload ke online (agar kedepannya tinggal perintah push saja)
-	git push -u nama_remote nama_branch contoh git push -u origin master
+		git push -u nama_remote nama_branch contoh git push -u origin master
 
 untuk upload ke online host 
-git push
+	git push
 	
 untuk merge data dari remote & local
-git fetch (terlebih dahulu untuk cek commit)
-git pull (jika error conflict perbaiki manual terlebih dahulu 
+	git fetch (terlebih dahulu untuk cek commit)
+	git pull (jika error conflict perbaiki manual terlebih dahulu 
 			kemudian stage & commit git commit -am "nama_file" dan push untuk upload ke online jika ada perubahan)
 
 jika posisi ada 2 remote harus ditentukan nama remotenya
