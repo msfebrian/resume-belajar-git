@@ -22,6 +22,9 @@ jika hanya untuk local folder saja/folder yg diinginkan saja
 	$ git config --local user.name "John Doe"
 	$ git config --local user.email johndoe@example.com
 
+cara menghapus konfigurasi user git
+	git config --global --unset user.name
+	git config --global --unset user.mail
 
 untuk memasukkan file ke stage
 - perintah untuk memasukkan semua file yg berubah--> git add .
