@@ -131,3 +131,21 @@ jika ingin alamatnya berbeda untuk domain pilih custom domain di setting
 
 fork adalah menduplikat repository lain
 
+CATATAN PROBEM SOLVING
+================================================================
+Jika gagal commit dari repository dari hasil clone
+dan tampil seperti ini
+	*** Please tell me who you are.
+	
+	Run
+	
+	  git config --global user.email "you@example.com"
+	  git config --global user.name "Your Name"
+	
+	to set your account's default identity.
+	Omit --global to set the identity only in this repository.
+	
+	fatal: unable to auto-detect email address (got 'blah@blah.(none)')
+
+GUNAKAN PERINTAH INI DAN PASTIKAN GLOBAL/LOCAL username dan email sudah terkonfigurasi
+	git -c user.name="Your Name" -c user.email="you@example.com" commit -m "message"
