@@ -26,6 +26,9 @@ cara menghapus konfigurasi user git
 	git config --global --unset user.name
 	git config --global --unset user.mail
 
+untuk melihat file config
+	git config --global -e
+
 untuk memasukkan file ke stage
 - perintah untuk memasukkan semua file yg berubah--> git add .
 - perintah untuk memasukkan file tertentu--> git add "nama_file"
@@ -131,7 +134,8 @@ jika ingin alamatnya berbeda untuk domain pilih custom domain di setting
 
 fork adalah menduplikat repository lain
 
-CATATAN PROBEM SOLVING
+
+CATATAN PROBEM SOLVING TESTED WORK
 ================================================================
 Jika gagal commit dari repository dari hasil clone
 dan tampil seperti ini
@@ -149,3 +153,11 @@ dan tampil seperti ini
 
 GUNAKAN PERINTAH INI DAN PASTIKAN GLOBAL/LOCAL username dan email sudah terkonfigurasi
 	git -c user.name="Your Name" -c user.email="you@example.com" commit -m "message"
+
+=================================================================
+
+CARA LAINNYA TAPI TIDAK BERHASIL
+Set config for this/current repo only just remove --global and set name/email like this:
+
+$ git config user.name "John Doe" 
+$ git config user.email "JohnDoe@gmail.com" 
