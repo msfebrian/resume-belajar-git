@@ -122,7 +122,11 @@ untuk push
 untuk hapus branch diremote 
 	git push nama_remote --delete nama_branch
 	contoh = git push origin --delete feature
-			
+
+Perbedaan git fetch dan Pull
+	perintah git pull di gunakan saat tidak ada commit yang pernah dilakukan di lokal. 
+	Sedangkan perintah git fetch digunakan kalau sudah ada commit yang dilakukan. 
+	Penggunaan git fetch lebih aman, karena kita akan melakukan merge branch secara manual. Sehingga kita bisa terhindar dari bentrokan.
 			
 Github Pages
 untuk membuat webhosting gratis gi github buat repository dengan format berikut:
