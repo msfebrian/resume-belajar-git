@@ -168,3 +168,7 @@ Set config for this/current repo only just remove --global and set name/email li
 
 kemudian
 	GIT_AUTHOR_EMAIL="you@email.com" && GIT_AUTHOR_NAME="Your Name" && git commit
+
+## merubah repository public ke private
+1. masuk ke repository pilih icon pengaturan
+2. cari visibility di menu paling bawah rubah ke private
